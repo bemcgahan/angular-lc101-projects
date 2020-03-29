@@ -3,6 +3,7 @@
     <ul>
         <li *ngFor = 'let chore of chores'>{{chore}}</li>
     </ul>
+    <p id = "workHard" *ngIf = "chores.length > finishedChores.length">Work Harder!</p>
 </div>
 <hr>
 <div class="doneChores">
